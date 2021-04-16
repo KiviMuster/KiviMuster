@@ -1,0 +1,89 @@
+body {
+    min-width: 320px;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Zen Dots', arial, helvetica;
+}
+
+
+/*SLIDESHOW-STYLE*/
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.slideshow-container p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    max-width: 600px;
+    border-radius: 10px;
+    height: 337px;
+}
+
+.active-slide {
+    display: block;
+}
+
+.active {
+    background-color: #717171;
+}
+
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    .mySlides img {
+        max-width: 100%;
+        max-height: 10%;
+        height: auto;
+    }
+    .slideshow-container p {
+        text-align: center;
+        font-size: 4.5vw;
+    }
+}
