@@ -1,0 +1,45 @@
+.home-start {
+    display: grid;
+    grid-template-areas: 'home-start-text home-start-logo';
+    background-color: #dbcbbd;
+    padding: 30px auto 10px auto;
+}
+
+.home-left {
+    grid-area: home-start-text;
+    margin: auto;
+}
+
+.text-logo {
+    grid-area: home-start-logo;
+    margin: auto;
+}
+
+.text-logo img {
+    width: 100%;
+}
+
+.home-text {
+    text-align: center;
+}
+
+.fa-facebook {
+    color: #4267B2 !important;
+}
+
+.fa-facebook:hover {
+    color: #898F9C !important;
+}
+
+.fa-facebook:active {
+    color: black !important;
+}
+
+@media (max-width: 768px) {
+    .home-start {
+        display: grid;
+        grid-template-areas: 'home-start-text''home-start-logo';
+        padding: 30px 0;
+        text-align: center;
+    }
+}

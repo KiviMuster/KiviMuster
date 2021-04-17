@@ -1,0 +1,136 @@
+body {
+    min-width: 320px;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin: 0;
+    animation: loadingin 2s;
+    color: #290001;
+}
+
+@keyframes loadingin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+h1 {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #290001;
+    animation: loadingin 3s;
+}
+
+#title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 'logo nav';
+    background-color: #c87941;
+    padding: 10px 10px 10px 10px;
+}
+
+.header a img {
+    width: 100px;
+    height: auto;
+    grid-area: logo;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    grid-area: logo;
+}
+
+.logo {
+    text-align: center;
+}
+
+.header a.active {
+    background-color: #290001;
+    color: white;
+}
+
+.header-right {
+    grid-area: nav;
+    justify-content: center;
+    margin: auto;
+}
+
+.header-right a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50px;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.header-right a:hover {
+    background-color: #87431d;
+    color: white;
+}
+
+.header-right a:active {
+    background-color: #290001;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 'logo''nav';
+        background-color: #c87941;
+        padding: 10px 10px 10px 10px;
+    }
+    .header a {
+        margin: auto;
+        display: block;
+    }
+    .header-right a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 50px;
+        margin: 5px 0;
+        padding: 5px 10px;
+    }
+    footer {
+        background-color: #c87941;
+        padding: 10px 0;
+        position: relative !important;
+    }
+    .header a img {
+        width: 40%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: #c87941;
+    padding: 5px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #290001;
+    font-size: 13px;
+}
